@@ -1,0 +1,122 @@
+/*영어 폰트 ; font-family: 'Itim', cursive;*/
+/*나눔고딕 ; font-family: 'NanumSquare', sans-serif;*/
+/*본문 영어 ; font-family: 'Alegreya Sans SC', sans-serif;*/
+header{
+    width: 100%;
+    padding:20px 12px 350px 12px;
+    position:fixed;
+    top:0;
+    left:0;
+    /*background:url(../img/commonbg.png);*/
+    background:url(../img/office.jpg) 300% 120% fixed;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    z-index:1;
+}
+header div::before{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content:"";
+    background:url(../img/pattern.png);
+    opacity: 0.7;
+    z-index: -100;
+}
+header div nav{
+    display: flex;
+    justify-content: space-between;
+    max-width:1200px;
+    margin:0 auto;
+    z-index: 999;
+}
+header div h2{
+    /*display: block;*/
+    /*background:rgba(204,204,204,0.7);*/
+    /*padding:20px 35px;*/
+    /*-webkit-border-radius: ;*/
+    /*-moz-border-radius: ;*/
+    /*border-radius: 10px;*/
+    position: absolute;
+    top:50%;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    transform: translate(-50%);
+    left:50%;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'NanumSquare', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+header div h2 span{
+    display: inline-block;
+    /*font-family: 'Itim', cursive;*/
+    font-size: 25px;
+    font-weight: bold;
+    margin-top:10px;
+}
+header div h2 span::before{
+    display: block;
+    content: "";
+    background: #000;
+    width: 15px;
+    height: 3px;
+    margin:10px auto 20px;
+}
+header div nav a>h1{
+    display:inline-block;
+    width: 181px;
+    height:46px;
+    line-height: 46px;
+    font-size: 0;
+    background:url(../img/logo-hero.svg) no-repeat;
+}
+header div nav ul{
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+header div nav ul li a{
+    display: inline-block;
+    margin:17px 20px;
+    color:#000;
+    font-size: 1.3rem;;
+    font-family: 'Itim', cursive;
+    position: relative;
+}
+header div nav ul li a::after{
+    display: block;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    bottom:-10px;
+    transition: width 0.3s ease 0s;
+    -webkit-transition: width 0.3s ease 0s;
+    -moz-transition: width 0.3s ease 0s;
+    -o-transition: width 0.3s ease 0s;
+}
+header div nav ul li:first-child a::after{
+    display: block;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    bottom:-10px;
+    transition: width 0.3s ease 0s;
+    -webkit-transition: width 0.3s ease 0s;
+    -moz-transition: width 0.3s ease 0s;
+    -o-transition: width 0.3s ease 0s;
+}
+header div nav ul li a:hover::after{
+    width:100%;
+}
+/*nav end*/

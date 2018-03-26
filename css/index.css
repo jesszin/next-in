@@ -1,0 +1,477 @@
+/*영어 폰트 ; font-family: 'Itim', cursive;*/
+/*나눔고딕 ; font-family: 'NanumSquare', sans-serif;*/
+/*본문 영어 ; font-family: 'Alegreya Sans SC', sans-serif;*/
+body{
+    background:#fdf8f8;
+}
+header{
+    width: 100%;
+    padding:20px 12px;
+    position:fixed;
+    top:0;
+    left:0;
+    background:#fdf8f8;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    z-index:9999;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    max-width:1200px;
+    margin:0 auto;
+}
+header nav a>h1{
+    display:inline-block;
+    width: 181px;
+    height:46px;
+    line-height: 46px;
+    font-size: 0;
+    background:url(../img/logo-hero.svg) no-repeat;
+}
+header nav ul{
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+header nav ul li a{
+    display: inline-block;
+    margin:17px 20px;
+    color:#000;
+    font-size: 1.3rem;;
+    font-family: 'Itim', cursive;
+    position: relative;
+}
+header nav ul li a::after{
+    display: block;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    bottom:-10px;
+    transition: width 0.3s ease 0s;
+    -webkit-transition: width 0.3s ease 0s;
+    -moz-transition: width 0.3s ease 0s;
+    -o-transition: width 0.3s ease 0s;
+}
+header nav ul li a:hover::after{
+    width:100%;
+}
+/*nav end*/
+
+/*layout*/
+#main-page{
+    width: 100%;
+    height: 100vh;
+    background:#fff;
+    font-family: 'NanumSquare', sans-serif;
+}
+#news-page,
+#business-page,
+#case-page{
+    width: 100%;
+    height: 100%;
+    padding-bottom:100px;
+}
+#contact-page{
+    widows: 100%;
+    height: 100%;
+    padding-bottom:50px;
+}
+#news-page .newsWrap{
+    width: 100%;
+    max-width: 60%;
+    margin:0 auto;
+    padding-top:200px;
+}
+#business-page .businessWrap,
+#case-page .caseWrap{
+    width: 100%;
+    padding-top: 100px;
+}
+.newsWrap .news{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top:50px;
+}
+.newsWrap .news>div{
+    width: 47%;
+    font-family:'NanumSquare', sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.businessWrap ul{
+    width: 100%;
+    margin-top:50px;
+    display: flex;
+    justify-content: flex-start;
+}
+.businessWrap ul li{
+    position: relative;
+    display: block;
+    width: 25%;
+    height: 390px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-repeat: no-repeat!important;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center!important;
+}
+#contact-page .contactWrap{
+    display: flex;
+    justify-content: flex-start;
+}
+#contact-page .contactWrap>div{
+    width:50%;
+}
+footer{
+    width: 100%;
+    padding:5% 0 2%;
+}
+/*common*/
+.clearfix{
+    content:"";
+    display: table;
+    clear: both;
+}
+.page-common>h3{
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: 600;
+}
+.page-common>h3::after{
+    display: block;
+    margin:20px auto;
+    content:"";
+    width:25px;
+    height: 3px;
+    background:#2677e0;
+}
+.page-common>h5{
+    font-size:1.4rem;
+    text-align: center;
+}
+
+/*news article list*/
+.newsWrap .news-list{
+    width: 100%;
+    padding:5% 0;
+}
+.newsWrap .news-list .title>p{
+    font-size:1rem;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    vertical-align: middle;
+}
+.newsWrap .news-list .title .more{
+    cursor: pointer;
+}
+.newsWrap .news-list>li{
+    border-bottom:1px solid #e2e2e6;
+    display: block;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.newsWrap .news-list>li>a{
+    position: relative;
+    display: block;
+    width:100%;
+    padding:20px 0;
+    text-indent:30px;
+    color:#000;
+    font-size:0.9rem;
+    letter-spacing: 1px;
+}
+.newsWrap .news-list>li>a:hover{
+    color:#2677e0;
+    background:rgba(237,238,239,0.8);
+    -webkit-transition:  all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition:  all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.newsWrap .news-list li a>span{
+    display: block;
+    font-size: 0.8rem;
+    color:#94989f;
+    margin-bottom:10px;
+}
+.newsWrap .news-list li:first-child{
+    display: flex;
+    justify-content: space-between;
+    border:none!important;
+}
+.newsWrap .news-list .underline{
+    display: block;
+    width: 100%;
+    height: 1px;
+    background:#e2e2e6;
+    position: relative;
+    margin-top:10px;
+}
+.newsWrap .news-list .underline::before{
+    content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    width:120px;
+    height: 100%;
+    background:#2677e0;
+}
+/*business page*/
+.businessWrap ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color:#fff;
+    letter-spacing:1px;
+    text-align: center;
+    position: relative;
+    z-index:2;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all  0.5s;
+    transition: all 0.5s;
+}
+.businessWrap ul li a::after{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%!important;
+    background:rgba(0,0,0,0.4);
+    content:"";
+    z-index:-3;
+    -webkit-transition: all 0.12s;
+    -moz-transition: all 0.12s;
+    -ms-transition: all 0.12s;
+    -o-transition: all  0.12s;
+    transition: all 0.12s;
+}
+.businessWrap ul li .ober{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background:rgba(38,119,224,0.5);
+    z-index:-1;
+    -webkit-transition:width 0.5s ease;
+    -moz-transition:width 0.5s ease;
+    -ms-transition:width 0.5s ease;
+    -o-transition:width 0.5s ease;
+    transition: width 0.5s ease;
+}
+.businessWrap ul li a:hover .ober{
+    width:100%;
+}
+.businessWrap ul li a h5{
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size:1.8rem;
+    font-weight: 600;
+    z-index:999;
+    padding-top:30%;
+}
+.businessWrap ul li a h5::after{
+    display: block;
+    content:"";
+    width:20px;
+    height: 3px;
+    background:#dcdcdc;
+    margin:20px auto;
+    z-index:999;
+    transition:0.3s linear;
+}
+.businessWrap ul li a p{
+    font-size: 1rem;
+    z-index:999;
+}
+.businessWrap ul li:first-child{
+     background:url(../img/business01.png);
+ }
+.businessWrap ul li:nth-child(2){
+    background:url(../img/business02.jpg);
+}
+.businessWrap ul li:nth-child(3){
+    background:url(../img/business03.jpg);
+}
+.businessWrap ul li:last-child{
+    background:url(../img/business04.jpg);
+}
+/*case page*/
+#case-page{
+    z-index: 0;
+}
+.caseWrap{
+    background:#edeeef;
+    position: relative;
+    z-index:1;
+}
+.caseWrap>h3,.caseWrap>h3::after,.caseWrap>h5{z-index:9999999999;!important;}
+.caseWrap ul{
+    max-width:60%;
+    margin:40px auto 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index:20;
+    padding-bottom:50px;
+}
+.caseWrap ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32%;
+    position: relative;
+    margin-top:20px;
+    z-index: 20;
+}
+.caseWrap ul li a img{
+    display: block;
+    z-index: 20;
+}
+.caseWrap ul li a{
+    display: block;
+    padding:30px 0;
+    z-index:20;
+}
+.caseWrap ul li a .overlay{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 0%;
+    background:rgba(255,255,255,1);
+    margin:auto;
+    opacity: 0;
+    z-index:10;
+    -webkit-transition: height 0.15s cubic-bezier(0.57,0.42,0.2,0.9),opacity 0.15s;
+    -moz-transition: height 0.15s cubic-bezier(0.57,0.42,0.2,0.9),opacity 0.15s;
+    -ms-transition: height 0.15s cubic-bezier(0.57,0.42,0.2,0.9),opacity 0.15s;
+    -o-transition: height 0.15s cubic-bezier(0.57,0.42,0.2,0.9),opacity 0.15s;
+    transition: height 0.15s cubic-bezier(0.57,0.42,0.2,0.9),opacity 0.15s;
+    will-change: transform;
+}
+.caseWrap ul li a:hover .overlay{
+    height: 100%;
+    opacity: 1;
+}
+/*case hover bg*/
+.bgWrap{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    z-index: -1;
+}
+.bgWrap>div{
+    -webkit-background-size: cover;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.5s cubic-bezier(0.57,0.15,0.13,0.97);
+    -moz-transition: all 0.5s cubic-bezier(0.57,0.15,0.13,0.97);
+    -ms-transition:all 0.5s cubic-bezier(0.57,0.15,0.13,0.97);
+    -o-transition: all 0.5s cubic-bezier(0.57,0.15,0.13,0.97);
+    transition: all 0.5s cubic-bezier(0.57,0.15,0.13,0.97);
+}
+.bgWrap>div::before{
+    position: absolute;
+    top:0;
+    left:0;
+    content:"";
+    display: block;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.3);
+}
+.bgWrap .case-bg01{
+    background:url(../img/case01.jpg);
+    opacity: 0;
+}
+.bgWrap .case-bg02{
+    background:url(../img/case02.jpg);
+    opacity: 0;
+}
+.bgWrap .case-bg03{
+    background:url(../img/case03.jpg);
+    opacity: 0;
+}
+.bgWrap .case-bg04{
+    background:url(../img/case04.jpg);
+    opacity: 0;
+}
+.bgWrap .case-bg05{
+    background:url(../img/case05.jpg);
+    opacity: 0;
+}
+.bgWrap .case-bg06{
+    background:url(../img/case06.jpg);
+    opacity: 0;
+}
+.bgWrap .case-bg07{
+    background:url(../img/case07.jpg);
+    opacity: 0;
+}
+/*contact*/
+.contactWrap div:first-child{
+    border-right:1px solid #ccc;
+}
+.contactWrap div a{
+    display: block;
+    width:100%;
+    padding:5% 0;
+    text-align: center;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+}
+.contactWrap div a h5{
+    font-size:1.5rem;
+    letter-spacing: 1px;
+}
+.contactWrap div a h5::after{
+    display: block;
+    content:"";
+    margin:15px auto;
+    width:20px;
+    height: 3px;
+    background:#2677e0;
+}
+.contactWrap div a p{
+    font-family: 'NanumSquare', sans-serif;
+    font-size:1rem;
+}
+/*footer*/
+footer{
+    background:url(../img/bg.png) no-repeat;
+    background-position: 100% 60%;
+    text-align: center;
+}
+footer p{
+    font-family: 'NanumSquare', sans-serif;
+    color:#dcdcdc;
+    line-height: 25px;
+}

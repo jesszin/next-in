@@ -306,6 +306,27 @@ header nav ul li:nth-child(2) a::after{
     background-position: bottom right;
     background-color:#d8d8d8;
 }
+/*complete*/
+.complete{
+    max-width: 20%;
+    padding:30px 10px;
+    margin:0 auto;
+    background:rgba(38,119,224,0.5);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    text-align: center;
+}
+.complete img{
+    margin-bottom:20px;
+}
+.complete p{
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: line-through;
+}
 /*footer*/
 footer{
     margin-top:50px;

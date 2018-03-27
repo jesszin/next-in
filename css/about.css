@@ -12,6 +12,28 @@ header nav ul li:first-child a::after{
     width: 100%;
     background:#2677e0;
 }
+
+/*common*/
+.aboutWrap .detail h3,
+.missionWrap .mission-ex h3,
+.greetingWrap h1{
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    font-family: 'NanumSquare', sans-serif;
+    margin:10px 0;
+}
+.explain{
+    font-family: 'NanumSquare', sans-serif;
+    margin-top:50px;
+    line-height: 25px;
+    font-size: 1.1rem;
+}
+.subtitle{
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-left:5vw;
+}
+
 /*layout*/
 #about-page{
     width: 100%;
@@ -24,18 +46,23 @@ header nav ul li:first-child a::after{
 }
 #mission-page{
     width: 100%;
-    height: 100vh;
-    background:#99f;
+    height: 40vh;
+    padding-bottom:100px;
 }
 #mission-page .missionWrap{
+    width:100%;
+    height: 100%;
     display: flex;
     justify-content: flex-start;
 }
-#mission-page .missionWrap .mission-pic{
-    width: 20%;
+#greeting-page{
+    width: 100%;
+    height: 100%;
+    padding-bottom:200px;
 }
-#mission-page .missionWrap .mission-ex{
-    width: 80%;
+#greeting-page .greetingWrap{
+    max-width: 50%;
+    margin:0 auto;
 }
 
 /*about*/
@@ -68,12 +95,8 @@ header nav ul li:first-child a::after{
     margin:20px 15% 20px;
 }
 .aboutWrap .detail h3{
-    font-size: 2.5rem;
-    letter-spacing: 2px;
-    font-family: 'NanumSquare', sans-serif;
-    font-weight: bold;
     text-align: center;
-    margin:10px 0;
+    font-weight: bold;
 }
 .aboutWrap .detail h3>span{
     color:#2677e0;
@@ -88,12 +111,6 @@ header nav ul li:first-child a::after{
     text-align: center;
     font-family: 'NanumSquare', sans-serif;
 }
-.aboutWrap .detail .explain{
-    font-family: 'NanumSquare', sans-serif;
-    margin-top:50px;
-    line-height: 25px;
-    font-size: 1.1rem;
-}
 
 .aboutWrap .detail-pic{
     background:url(../img/about-img.png) no-repeat;
@@ -103,4 +120,81 @@ header nav ul li:first-child a::after{
 }
 
 /*mission*/
-.mission
+#mission-page .missionWrap .mission-pic{
+    width: 25vw;
+    height: 100%;
+    background:url(../img/mission-img.png) no-repeat;
+    background-size:100% 100%;
+    background-position: top;
+}
+#mission-page .missionWrap .mission-ex{
+    width: 75vw;
+    background:#eeeeee;
+    font-family: 'NanumSquare', sans-serif;
+}
+.missionWrap .mission-ex .subtitle{
+    font-size: 2rem;
+}
+.missionWrap .mission-ex h3{
+    margin-left:5vw;
+    margin-top:4vw;
+    font-weight: bolder;
+}
+.missionWrap .mission-ex h3::after{
+    display: block;
+    content:"";
+    width: 155px;
+    height: 4px;
+    background:#2677e0;
+    margin:15px 0.1vw 30px;
+}
+.missionWrap .mission-ex .explain{
+    margin-left:5vw;
+}
+/*ceo*/
+.greetingWrap h1{
+    text-align: center;
+    font-weight: bolder;
+    margin:50px 0;
+}
+.greetingWrap>img{
+    width: 100%;
+}
+.greetingWrap .subtitle{
+    font-size: 1.5rem;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 80px;
+}
+.greetingWrap .sign,
+.greetingWrap .explain{
+    text-align: center;
+}
+.greetingWrap .explain{
+    line-height: 30px;
+}
+.greetingWrap .sign{
+    font-weight: 600;
+    font-size:1.3rem;
+    margin-top:50px;
+}
+.greetingWrap .sign>img{
+    vertical-align:middle;
+}
+/*footer*/
+footer{
+    width: 100%;
+    padding:3% 0;
+}
+footer{
+    background:url(../img/footer-img.jpg) no-repeat;
+    background-position: 100% 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    text-align: center;
+}
+footer p{
+    font-family: 'NanumSquare', sans-serif;
+    color:#dcdcdc;
+    line-height: 25px;
+}

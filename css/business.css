@@ -17,7 +17,6 @@ header nav ul li:nth-child(2) a::after{
 #allstep-page{
     width: 100%;
     height: 100vh;
-    background:#ddd;
 }
 #allstep-page .allWrap{
     width:100%;
@@ -25,21 +24,32 @@ header nav ul li:nth-child(2) a::after{
 }
 #allstep-page .allWrap ul{
     max-width: 55%;
-
+    padding:0 30px;
+    background:#f2f1f1;
     margin:20px auto;
     display: flex;
     justify-content: space-between;
 }
 .allWrap ul li{
     width: 24%;
-    padding:50px 0;
-    background:#f99;
+    padding:30px 0;
+}
+#plan-page{
+    width: 100%;
+    height: 40vh;
+    background:#ddd;
+}
+#plan-page .planWrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+#plan-page .planWrap>div{
+    width: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /*all Step*/
-.allWrap{
-    font-family: 'NanumSquare', sans-serif;
-}
 .allWrap h1{
     font-weight: bolder;
     font-size: 2.3rem;
@@ -47,19 +57,26 @@ header nav ul li:nth-child(2) a::after{
     text-align: center;
     margin-top:100px;
 }
+.allWrap h2{
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    text-align: center;
+    margin:100px 0 70px;
+}
 .allWrap ul li a{
     display: block;
     width: 100%;
     font-weight: bold;
-    font-size: 1.2rem;
-    white-space: initial;
+    font-size: 1.15rem;
+    white-space: inherit;
     position: relative;
 }
 .allWrap ul li a::before{
     display: inline-block;
     content:"";
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
@@ -70,19 +87,31 @@ header nav ul li:nth-child(2) a::after{
 .allWrap ul li a::after{
     display:inline-block;
     content:"";
-    width: 5px;
-    height: 5px;
-    border-top:2px solid #fff;
-    border-right:2px solid #fff;
+    width: 3px;
+    height: 3px;
+    border-top:1px solid #fff;
+    border-right:1px solid #fff;
     position: absolute;
-    top:6px;
-    left:6px;
+    top:8px;
+    left:5.5px;
     transform:rotate(45deg);
 }
+.allWrap ul li a:hover{
+    -webkit-transition:  all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition:  all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    color:#2677e0;
+}
 .allWrap ul li a span{
+    display: inline-block;
     font-weight: normal;
-    font-size: 1.1rem;
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 0.95rem;
     margin-left:1vw;
+    margin-top:10px;
     letter-spacing: 1px;
 }
 
+/*plan page*/

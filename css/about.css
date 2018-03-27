@@ -185,13 +185,12 @@ header nav ul li:first-child a::after{
 footer{
     width: 100%;
     padding:3% 0;
-}
-footer{
     background:url(../img/footer-img.jpg) no-repeat;
     background-position: 100% 100%;
     -webkit-background-size: cover;
     background-size: cover;
     text-align: center;
+    position: relative;
 }
 footer p{
     font-family: 'NanumSquare', sans-serif;

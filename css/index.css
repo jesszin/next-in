@@ -466,9 +466,12 @@ footer{
 }
 /*footer*/
 footer{
-    background:url(../img/bg.png) no-repeat;
-    background-position: 100% 60%;
+    background:url(../img/footer-img.jpg) no-repeat;
+    background-position: 100% 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
     text-align: center;
+    position: relative;
 }
 footer p{
     font-family: 'NanumSquare', sans-serif;

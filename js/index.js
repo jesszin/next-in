@@ -82,3 +82,4 @@ $(function(){
         $('.subject').css('color','#000');
     });//7
 });
+//case click

@@ -298,16 +298,16 @@ footer{
     z-index:999;
 }
 .businessWrap ul li:first-child{
-     background:url(../img/business01.png);
+     background:url(../img/main-business01.png);
  }
 .businessWrap ul li:nth-child(2){
-    background:url(../img/business02.jpg);
+    background:url(../img/main-business02.jpg);
 }
 .businessWrap ul li:nth-child(3){
-    background:url(../img/business03.jpg);
+    background:url(../img/main-business03.jpg);
 }
 .businessWrap ul li:last-child{
-    background:url(../img/business04.jpg);
+    background:url(../img/main-business04.jpg);
 }
 /*case page*/
 #case-page{

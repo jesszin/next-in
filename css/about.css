@@ -116,7 +116,7 @@ header nav ul li:first-child a::after{
     background:url(../img/about-img.png) no-repeat;
     -webkit-background-size: cover;
     background-size: contain;
-    background-position: right 50%;
+    background-position: center 50%;
 }
 
 /*mission*/

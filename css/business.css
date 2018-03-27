@@ -13,17 +13,45 @@ header nav ul li:nth-child(2) a::after{
     background:#2677e0;
 }
 
+/*common*/
+.step-icon{
+    width: 120px;
+    height: 120px;
+    background:#000;
+    position: absolute;
+    top:-60px;
+    left:50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    color:#fff;
+    text-align: center;
+    line-height: 110px;
+    font-size: 1.5rem;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    letter-spacing: 1px;
+}
+.step-icon span{
+    font-size:3rem;
+    font-weight: bolder;
+}
+
 /*layout*/
 #allstep-page{
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 #allstep-page .allWrap{
     width:100%;
     padding-top:94px;
 }
 #allstep-page .allWrap ul{
-    max-width: 55%;
+    max-width:70%;
     padding:0 30px;
     background:#f2f1f1;
     margin:20px auto;
@@ -32,14 +60,30 @@ header nav ul li:nth-child(2) a::after{
 }
 .allWrap ul li{
     width: 24%;
-    padding:30px 0;
+    padding:40px 0;
 }
 #plan-page{
     width: 100%;
     height: 40vh;
     background:#ddd;
+    z-index:1;
+    position: relative;
+    margin-bottom:100px;
+}
+#plan-page::after{
+    display: block;
+    width: 30px;
+    height: 30px;
+    content:"";
+    background:#ddd;
+    transform: rotate(45deg);
+    position: absolute;
+    left:49%;
+    bottom:-10px;
 }
 #plan-page .planWrap{
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -47,6 +91,7 @@ header nav ul li:nth-child(2) a::after{
     width: 50%;
     background-repeat: no-repeat;
     background-position: center;
+    z-index: 2;
 }
 
 /*all Step*/
@@ -62,7 +107,7 @@ header nav ul li:nth-child(2) a::after{
     font-size: 1.5rem;
     letter-spacing: 1px;
     text-align: center;
-    margin:100px 0 70px;
+    margin:100px 0 150px;
 }
 .allWrap ul li a{
     display: block;
@@ -92,7 +137,7 @@ header nav ul li:nth-child(2) a::after{
     border-top:1px solid #fff;
     border-right:1px solid #fff;
     position: absolute;
-    top:8px;
+    top:9px;
     left:5.5px;
     transform:rotate(45deg);
 }

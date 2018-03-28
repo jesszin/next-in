@@ -1,0 +1,59 @@
+/*영어 폰트 ; font-family: 'Itim', cursive;*/
+/*나눔고딕 ; font-family: 'NanumSquare', sans-serif;*/
+/*본문 영어 ; font-family: 'Alegreya Sans SC', sans-serif;*/
+body{
+    background:#fdf8f8;
+}
+/*nav*/
+header nav ul li:nth-child(3) a{
+    color:#2677e0;
+}
+header nav ul li:nth-child(3) a::after{
+    width: 100%;
+    background:#2677e0;
+}
+
+/*common*/
+
+/*layout*/
+#ir-page{
+    width: 100%;
+    height: 100vh;
+    background:#ddd;
+}
+#ir-page .irWrap{
+    max-width: 60%;
+    margin:0 auto;
+    padding-top:130px;
+    background:#f99;
+}
+#ir-page .irWrap ul{
+    max-width: 75%;
+    margin:30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+#ir-page .irWrap ul li{
+    width: 33%;
+}
+
+/*ir page*/
+.irWrap h2{
+    font-family:'NanumSquare', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align:center;
+    margin-top:100px;
+}
+.irWrap h2::after{
+    display: block;
+    width: 60px;
+    height: 5px;
+    background:#2677e0;
+    content:"";
+    margin:30px auto 50px;
+}
+#ir-page .irWrap ul{
+    background:rgba()
+}

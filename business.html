@@ -29,7 +29,7 @@
         <ul>
             <li><a href="about.html">ABOUT</a></li>
             <li><a href="business.html">BUSINESS</a></li>
-            <li><a href="#">IR</a></li>
+            <li><a href="ir">IR</a></li>
             <li><a href="#">NEWS</a></li>
             <li><a href="#">RECRUIT</a></li>
         </ul>
@@ -65,11 +65,11 @@
             </li>
         </ul>
 
-        <h2>
+        <h2 class="hide">
             편리하고 혁신적인 IT 서비스 구축 흐름
         </h2>
     </div>
-    <div id="plan-page" class="step01">
+    <div id="plan-page" class="step01 hide">
         <div class="step-icon">
             step. <span>1</span>
         </div>
@@ -105,7 +105,7 @@
         </div>
     </div>
 
-    <div id="plan-page" class="step02">
+    <div id="plan-page" class="step02 hide">
         <div class="step-icon">
             step. <span>2</span>
         </div>
@@ -168,7 +168,7 @@
         </div>
     </div>
 
-    <div id="plan-page" class="step03">
+    <div id="plan-page" class="step03 hide">
         <div class="step-icon">
             step. <span>3</span>
         </div>
@@ -203,7 +203,7 @@
             <div class="right"></div>
         </div>
     </div>
-    <div class="complete">
+    <div class="complete hide">
         <img src="img/logo.png" alt="complete logo">
         <p>COMPLETELY WORKFLOW</p>
     </div>
@@ -215,5 +215,18 @@
     <p>COPYRIGHT &copy;  2018 Next In. ALL RIGHTS RESERVED.</p>
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $(window).scroll( function(){
+            $('.hide').each( function(i){
+                var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+                var bottom_of_window = $(window).scrollTop() + $(window).height();
+                if( bottom_of_window > bottom_of_object ){
+                    $(this).animate({'opacity':'1'},800);
+                }
+            });
+        });
+    });
+</script>
 </body>
 </html>

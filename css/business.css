@@ -311,7 +311,6 @@ header nav ul li:nth-child(2) a::after{
     max-width: 20%;
     padding:30px 10px;
     margin:0 auto;
-    background:rgba(38,119,224,0.5);
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     border-radius: 15px;
@@ -344,3 +343,6 @@ footer p{
     color:#dcdcdc;
     line-height: 25px;
 }
+/*js css*/
+.hide{
+    opacity: 0;}

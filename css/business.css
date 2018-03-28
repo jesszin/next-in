@@ -5,10 +5,10 @@ body{
     background:#fdf8f8;
 }
 /*nav*/
-header nav ul li:nth-child(2) a{
+header nav ul li:nth-child(3) a{
     color:#2677e0;
 }
-header nav ul li:nth-child(2) a::after{
+header nav ul li:nth-child(3) a::after{
     width: 100%;
     background:#2677e0;
 }

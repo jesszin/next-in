@@ -37,20 +37,47 @@
 <div id="ir-page">
     <div class="irWrap">
         <h2>IR NEWS 및 투자 정보</h2>
-        <ul>
-            <li>
-                <a href="#">주식 및 주식정보</a>
-            </li>
-            <li>
-                <a href="#">IFRS 기준 실적</a>
-            </li>
-            <li>
-                <a href="#">IR 뉴스</a>
-            </li>
-        </ul>
+        <div class="ir-graph">
+            <ul class="ir-menu">
+                <li>
+                    <a href="#">IR</a>
+                </li>
+                <li>
+                    <a href="#">IR NEWS</a>
+                </li>
+                <li>
+                    <a href="#">NEST-IN NEWS</a>
+                </li>
+            </ul>
+
+            <ul class="comment">
+                <li>1분기</li>
+                <li>2분기</li>
+                <li>3분기</li>
+                <li>4분기</li>
+            </ul>
+            <h4>년도별 실적요약</h4>
+            <div class="graph">
+                <div class="graph01">
+                    <p class="date">2017년</p>
+                    <p class="won">(단위: 만원)</p>
+                    <svg id="irGraph"></svg>
+                </div>
+                <div class="graph02">
+                    <p class="date">2016년</p>
+                    <p class="won">(단위: 만원)</p>
+                    <svg id="irGraph02"></svg>
+                </div>
+            </div>
+
+        </div>
+        <!--irwrap-->
     </div>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="js/ir.js"></script>
+<script src="js/ir02.js"></script>
 </body>
 </html>

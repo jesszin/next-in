@@ -3,7 +3,7 @@ $(document).ready(function() {
         $('.hide-title').each( function(i){
             var pagetitle = $(window).scrollTop();
             if( pagetitle > 0 ){
-                $(this).animate({'opacity':'1'},300);
+                $(this).animate({'opacity':'1'},100);
             }
         });
         $('.hide').each( function(i){

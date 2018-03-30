@@ -1,11 +1,11 @@
-var svgWidth=500;
+var svgWidth=350;
 var svgHeight=300;
 var offsetX=30;
 var offsetY=20;
 var barElements;
 var dataSet=[120,170,220,90];
 var dataMax=300;
-var barWidth=30;
+var barWidth=50;
 var barMargin=20;
 
 barElements=d3.select("#irGraph02")
@@ -37,9 +37,9 @@ barElements.enter()
     .append("text")
     .attr("class","barNum")
     .attr("x",function(d,i){
-        return i *(barWidth+barMargin)+15+offsetX;
+        return i *(barWidth+barMargin)+30+offsetX;
     })
-    .attr("y",svgHeight- 5 -offsetY)
+    .attr("y",svgHeight- 25 -offsetY)
     .text(function(d,i){
         return d;
     })
@@ -56,8 +56,8 @@ d3.select("#irGraph02")
     .call(
         d3.axisLeft()
             .scale(yScale)
-            .ticks(10)
-            .tickValues([10,50,100,150,200,250,300])
+            .ticks(5)
+            .tickValues([50,100,150,200,250])
     )
 
 //가로 선
@@ -72,7 +72,7 @@ barElements.enter()
     .append("text")
     .attr("class","barName")
     .attr("x",function(d,i){
-        return i*(barWidth+barMargin)+10+offsetX;
+        return i*(barWidth+barMargin)+12+offsetX;
     })
     .attr("y",svgHeight-offsetY+15)
     .text(function(d,i){

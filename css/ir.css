@@ -103,7 +103,7 @@ svg {
     width:42%;
 }
 #ir-page .irWrap .stock{
-    width: 60%;
+    width:80%;
     margin:40px auto 10px;
     background:#f8f;
 }
@@ -193,3 +193,41 @@ svg {
     color:#3c3c3c;
 }
 /*주식*/
+.irWrap .stock li{
+    letter-spacing: 1px;
+}
+.irWrap .stock li:first-child{
+    display: flex;
+    vertical-align: middle;
+}
+.irWrap .stock li .company{
+    font-weight: bold;
+    font-size: 2.3rem;
+    margin-right:10px;
+}
+.irWrap .stock li .code{
+    font-size: 0.9rem;
+    line-height: 20px;
+    color:#4c4c4c
+}
+.irWrap .stock li .code>span{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.irWrap .stock li:last-child>p{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.irWrap .stock li:last-child .cost{
+    line-height: 25px;
+}
+.irWrap .stock li:last-child .cost>li{
+    font-size: 0.9rem;
+    color: #4c4c4c;
+    line-height: 40px;
+}
+.irWrap .stock li:last-child .cost>li:first-child{
+    font-size: 2rem;
+    font-weight: 600;
+    color:#c81221;
+}

@@ -26,7 +26,7 @@ svg {
     width: 400px;
     height: 360px;
     margin-top:30px;
-    background:#ff9;
+    background:#f4f2f0;
 }
 /*.bar { fill : #f99 }*/
 
@@ -101,7 +101,7 @@ svg {
     padding-bottom: 40px;
 }
 .graph>div{
-    width:40%;
+    width:42%;
 }
 
 /*ir page*/

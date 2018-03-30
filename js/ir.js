@@ -1,79 +1,80 @@
-var svgWidth = 320;
-var svgHeight = 280;
-var offsetX = 35;
-var offsetY = 20;
+var svgWidth=500;
+var svgHeight=300;
+var offsetX=30;
+var offsetY=20;
 var barElements;
-var dataSet = [160, 210, 175, 110];
-var dataMax = 300;
-var barWidth = 35;
-var barMargin = 25;
+var dataSet=[120,170,220,90];
+var dataMax=300;
+var barWidth=30;
+var barMargin=20;
 
-barElements = d3.select("#irGraph")
+barElements=d3.select("#irGraph02")
     .selectAll("rect")
     .data(dataSet)
 
-// 데이터
 barElements.enter()
     .append("rect")
-    .attr("class", "bar")
-    .attr("height", 0)
-    .attr("width", barWidth)
-    .attr("x", function(d, i){
+    .attr("class","bar")
+    .attr("height",0)
+    .attr("width",barWidth)
+    .attr("x",function(d,i){
         return i * (barWidth+barMargin)+offsetX;
     })
-    .attr("y", svgHeight - offsetY)
-
-    // 애니메이션
+    .attr("y",svgHeight-offsetY)
     .transition()
     .duration(1000)
-    .delay(function(d, i){
-        return i * 100;
+    .delay(function(d,i){
+        return i*100;
     })
-    .attr("y", function(d, i){
-        return svgHeight - d - offsetY;
+    .attr("y",function(d,i){
+        return svgHeight-d-offsetY;
     })
-    .attr("height", function(d,i){
+    .attr("height",function(d,i){
         return d;
     })
+
 barElements.enter()
     .append("text")
-    .attr("class", "barNum")
-    .attr("x", function(d, i){
-        return i * (barWidth+barMargin) + 17+offsetX;
+    .attr("class","barNum")
+    .attr("x",function(d,i){
+        return i *(barWidth+barMargin)+15+offsetX;
     })
-    .attr("y", svgHeight - 10-offsetY)
-    .text(function(d, i){
+    .attr("y",svgHeight- 5 -offsetY)
+    .text(function(d,i){
         return d;
     })
-// 눈금을 표시하기 위한 스케일 설정
-var yScale = d3.scale.linear()  // 스케일 설정
-    .domain([0, dataMax])   // 원래 크기
-    .range([dataMax, 0]) // 실체 출력 크기
-// 세로 방향의 눈금을 설정하고 표시
-d3.select("#irGraph")
+
+var yScale = d3.scaleLinear()
+    .domain([0,dataMax])
+    .range([dataMax,0])
+
+//세로 눈금
+d3.select("#irGraph02")
     .append("g")
-    .attr("class", "axis")
-    .attr("transform", "translate("+offsetX+", "+((svgHeight-300)-offsetY)+")")
+    .attr("class","axis")
+    .attr("transform","translate("+offsetX+","+((svgHeight-300)-offsetY)+")")
     .call(
-        d3.svg.axis()
+        d3.axisLeft()
             .scale(yScale)
-            .orient("left")
+            .ticks(10)
+            .tickValues([10,50,100,150,200,250,300])
     )
 
-d3.select("#irGraph")
+//가로 선
+d3.select("#irGraph02")
     .append("rect")
-    .attr("class", "axis_x")
-    .attr("width", svgWidth)
-    .attr("height", 1)
-    .attr("transform", "translate("+offsetX+", "+(svgHeight-offsetY)+")")
-
+    .attr("class","axis_x")
+    .attr("width",svgWidth)
+    .attr("height",1)
+    .attr("transform","translate("+offsetX+","+(svgHeight-offsetY)+")")
+//막대의레이블을표시
 barElements.enter()
     .append("text")
-    .attr("class", "barName")
-    .attr("x", function(d, i){
-        return i * (barWidth+barMargin) + 5+offsetX;
+    .attr("class","barName")
+    .attr("x",function(d,i){
+        return i*(barWidth+barMargin)+10+offsetX;
     })
-    .attr("y", svgHeight-offsetY+15)
-    .text(function(d, i){
-        return ["1분기", "2분기", "3분기", "4분기"][i];
+    .attr("y",svgHeight-offsetY+15)
+    .text(function(d,i){
+        return["1분기","2분기","3분기","4분기"][i];
     })

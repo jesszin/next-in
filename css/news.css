@@ -1,0 +1,195 @@
+/*영어 폰트 ; font-family: 'Itim', cursive;*/
+/*나눔고딕 ; font-family: 'NanumSquare', sans-serif;*/
+/*본문 영어 ; font-family: 'Alegreya Sans SC', sans-serif;*/
+body{
+    background:#fdf8f8;
+}
+/*nav*/
+header nav ul li:nth-child(4) a{
+    color:#2677e0;
+}
+header nav ul li:nth-child(4) a::after{
+    width: 100%;
+    background:#2677e0;
+}
+
+/*--common-page*/
+#ir-page .irWrap .ir-menu li{
+    border:1px solid #2677e0;
+}
+#ir-page .irWrap .ir-menu li:first-child,
+#ir-page .irWrap .ir-menu li:nth-child(2){
+    border-right:none;
+}
+#ir-page .irWrap .ir-menu li a{
+    display: block;
+    width: 100%;
+    padding:25px 0;
+    text-align: center;
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color:#2677e0;
+}
+#ir-page .irWrap .ir-menu{
+    margin:30px 0;
+}
+#ir-page .irWrap .ir-menu li{
+    width: 33.333%;
+}
+#ir-page .irWrap .ir-menu li:nth-child(3) a{
+    background:#2677e0;
+    color:#fff;
+}
+/*레이아웃*/
+#ir-page{
+    width: 100%;
+    height: 100%;
+}
+#ir-page .irWrap{
+    max-width: 70%;
+    margin:0 auto;
+    padding-top:130px;
+}
+#ir-page .irWrap .ir-graph{
+    max-width: 80%;
+    margin:0 auto;
+    padding:35px 25px;
+    background:#ffff;
+}
+#ir-page .irWrap .ir-menu{
+    width: 100%;
+    display: flex;
+}
+/*ir page*/
+.irWrap h2{
+    font-family:'NanumSquare', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align:center;
+    margin-top:100px;
+}
+.irWrap h2::after{
+    display: block;
+    width: 60px;
+    height: 5px;
+    background:#2677e0;
+    content:"";
+    margin:30px auto 50px;
+}
+
+/*common*/
+
+
+/*layout*/
+#ir-page .irWrap .ir-graph .news{
+    max-width: 80%;
+    margin:0 auto 30px;
+}
+#ir-page .ir-graph .news ul li{
+    display: flex;
+    font-weight: normal;
+    border-bottom:1px solid #ddd;
+    padding:20px 0;
+    vertical-align: middle;
+    line-height: 1rem;
+}
+
+/*news*/
+.irWrap .ir-graph h3,
+.irWrap .ir-graph h4{
+    letter-spacing: 1px;
+    text-align: center;
+}
+.irWrap .ir-graph h3{
+    font-weight: 600;
+    font-size: 2rem;
+    margin-top:60px;
+}
+.irWrap .ir-graph h3::after{
+    display: block;
+    content:"";
+    width: 40px;
+    height: 4px;
+    background:#2677e0;
+    margin:20px auto;
+}
+.irWrap .ir-graph h4{
+    font-size: 0.9rem;
+    margin-bottom:40px;
+}
+.ir-graph .news ul li>p{
+    display: block;;
+    color:#ccc;
+    padding:0 20px;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+.ir-graph .news ul li>span{
+    display:block;
+    line-height: 1rem;
+    font-size: 0.9rem;
+    width:90px;
+    margin-right:20px;
+    text-align: center;
+    background:#4c1b1b;
+    color:#fff;
+}
+.ir-graph .news ul li>a{
+    display: block;
+    color:#4c4c4c;
+    letter-spacing: 1.2px;
+    margin-right:10px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.ir-graph .news ul li>a:hover{
+    color:#0052bc;
+}
+.ir-graph .news ul li a img{
+    vertical-align: middle;
+}
+.ir-graph .news>a{
+    display: block;
+    width: 25%;
+    padding:20px;
+    margin:30px auto 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border:1px solid #0052bc;
+    color:#0052bc;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.ir-graph .news>a:hover{
+    -webkit-transition:all 0.2s ease-in-out;
+    -moz-transition:all 0.2s ease-in-out;
+    -ms-transition:all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    background:#0052bc;
+    color:#fff;
+}
+/*footer*/
+footer{
+    width: 100%;
+    margin-top:150px;
+    padding:3% 0;
+    background:url(../img/footer-img.jpg) no-repeat;
+    background-position: 100% 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+footer p{
+    font-family: 'NanumSquare', sans-serif;
+    color:#dcdcdc;
+    line-height: 25px;
+}

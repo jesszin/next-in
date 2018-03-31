@@ -190,7 +190,29 @@ svg {
 #ir-page .irWrap .comment li:last-child::before{
     background: #EA5442;
 }
+.irWrap .ir-graph h3,
 .irWrap .ir-graph h4{
+    letter-spacing: 1px;
+    text-align: center;
+}
+.irWrap .ir-graph h3{
+    font-weight: 600;
+    font-size: 2rem;
+    margin-top:60px;
+}
+.irWrap .ir-graph h3::after{
+    display: block;
+    content:"";
+    width: 40px;
+    height: 4px;
+    background:#2677e0;
+    margin:20px auto;
+}
+.irWrap .ir-graph h4{
+    font-size: 0.9rem;
+    margin-bottom:40px;
+}
+.irWrap .ir-graph .title{
     font-size: 1.3rem;
     font-weight: 600;
     letter-spacing: 1px;
@@ -281,7 +303,7 @@ table .subject>th{
     font-weight: 600;
     text-align: center;
 }
-.irWrap .ir-graph>p{
+.irWrap .ir-graph .warninig{
     color:#ccc;
     font-size: 0.9rem;
     font-weight: 600;

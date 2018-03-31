@@ -1,0 +1,84 @@
+/*영어 폰트 ; font-family: 'Itim', cursive;*/
+/*나눔고딕 ; font-family: 'NanumSquare', sans-serif;*/
+/*본문 영어 ; font-family: 'Alegreya Sans SC', sans-serif;*/
+body{
+    background:#fdf8f8;
+}
+/*nav*/
+header nav ul li:nth-child(4) a{
+    color:#2677e0;
+}
+header nav ul li:nth-child(4) a::after{
+    width: 100%;
+    background:#2677e0;
+}
+
+/*common*/
+#ir-page .irWrap .ir-menu li{
+    border:1px solid #2677e0;
+}
+#ir-page .irWrap .ir-menu li:first-child,
+#ir-page .irWrap .ir-menu li:nth-child(2){
+    border-right:none;
+}
+#ir-page .irWrap .ir-menu li a{
+    display: block;
+    width: 100%;
+    padding:25px 0;
+    text-align: center;
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color:#2677e0;
+}
+#ir-page .irWrap .ir-menu{
+    margin:30px 0;
+}
+#ir-page .irWrap .ir-menu li{
+    width: 33.333%;
+}
+#ir-page .irWrap .ir-menu li:nth-child(2) a{
+    background:#2677e0;
+    color:#fff;
+}
+
+/*layout*/
+#ir-page{
+    width: 100%;
+    height: 100%;
+}
+#ir-page .irWrap{
+    max-width: 70%;
+    margin:0 auto;
+    padding-top:130px;
+}
+#ir-page .irWrap .ir-graph{
+    max-width: 80%;
+    margin:0 auto;
+    padding:35px 25px;
+    background:#ffff;
+}
+#ir-page .irWrap ul{
+    width: 100%;
+    display: flex;
+}
+
+
+/*ir page*/
+.irWrap h2{
+    font-family:'NanumSquare', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align:center;
+    margin-top:100px;
+}
+.irWrap h2::after{
+    display: block;
+    width: 60px;
+    height: 5px;
+    background:#2677e0;
+    content:"";
+    margin:30px auto 50px;
+}

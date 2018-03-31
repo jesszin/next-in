@@ -19,6 +19,34 @@ header nav ul li:nth-child(4) a::after{
     content: "";
     clear:both;
 }
+#ir-page .irWrap .ir-menu li{
+    border:1px solid #2677e0;
+}
+#ir-page .irWrap .ir-menu li:first-child,
+#ir-page .irWrap .ir-menu li:nth-child(2){
+    border-right:none;
+}
+#ir-page .irWrap .ir-menu li a{
+    display: block;
+    width: 100%;
+    padding:25px 0;
+    text-align: center;
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color:#2677e0;
+}
+#ir-page .irWrap .ir-menu{
+    margin:30px 0;
+}
+#ir-page .irWrap .ir-menu li{
+    width: 33.333%;
+}
+#ir-page .irWrap .ir-menu li:first-child a{
+    background:#2677e0;
+    color:#fff;
+}
 
 /*SVG D3*/
 svg {
@@ -85,12 +113,7 @@ svg {
     width: 100%;
     display: flex;
 }
-#ir-page .irWrap .ir-menu{
-    margin:30px 0;
-}
-#ir-page .irWrap .ir-menu li{
-    width: 33.333%;
-}
+
 #ir-page .irWrap .comment{
     justify-content: flex-end;
 }
@@ -143,29 +166,7 @@ svg {
     content:"";
     margin:30px auto 50px;
 }
-#ir-page .irWrap .ir-menu li{
-    border:1px solid #2677e0;
-}
-#ir-page .irWrap .ir-menu li:first-child,
-#ir-page .irWrap .ir-menu li:nth-child(2){
-    border-right:none;
-}
-#ir-page .irWrap .ir-menu li a{
-    display: block;
-    width: 100%;
-    padding:25px 0;
-    text-align: center;
-    font-family: 'NanumSquare', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    color:#2677e0;
-}
-/*hover*/
-#ir-page .irWrap .ir-menu li:first-child a{
-    background:#2677e0;
-    color:#fff;
-}
+
 #ir-page .irWrap .comment li{
     padding:5px;
 }

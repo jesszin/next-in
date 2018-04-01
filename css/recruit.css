@@ -1,0 +1,14 @@
+/*영어 폰트 ; font-family: 'Itim', cursive;*/
+/*나눔고딕 ; font-family: 'NanumSquare', sans-serif;*/
+/*본문 영어 ; font-family: 'Alegreya Sans SC', sans-serif;*/
+body{
+    background:#fdf8f8;
+}
+/*nav*/
+header nav ul li:last-child a{
+    color:#2677e0;
+}
+header nav ul li:last-child a::after{
+    width: 100%;
+    background:#2677e0;
+}

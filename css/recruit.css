@@ -12,3 +12,91 @@ header nav ul li:last-child a::after{
     width: 100%;
     background:#2677e0;
 }
+
+/*layout*/
+#hire-page{
+    width:100%;
+    height: 100%;
+    padding-bottom:50px;
+}
+#hire-page .hireWrap{
+    max-width: 60%;
+    margin:0 auto;
+}
+#hire-page .hireWrap .director{
+    width: 60%;
+    margin:50px auto 30px;
+    padding:10px;
+    border:solid 1px #ddd;
+}
+#job-page{
+    width:100%;
+    height: 50vh;
+    background:#eeeeee;
+    margin-bottom:40px;
+}
+#job-page .jobWrap{
+    width: 45%;
+    margin:0 auto;
+    background:#ff9;
+}
+#job-page .jobWrap>div{
+    width: 100%;
+    background:#f8f;
+}
+
+/*hire*/
+.hireWrap h3,
+.hireWrap .subtitle{
+    font-family: 'NanumSquare', sans-serif;
+    letter-spacing: 1px;
+    text-align:center;
+}
+.hireWrap p:first-child{
+    padding-top:94px;
+    margin-top:80px;
+}
+.hireWrap .subtitle{
+    color:#bbb;
+    font-size: 1.2rem;
+}
+.hireWrap h3{
+    font-size: 3rem;
+    font-weight: bold;
+    margin:10px 0;
+}
+.hireWrap h3>span{
+    color:#2677e0;;
+    font-weight: bolder;
+}
+.hireWrap h4{
+    font-size: 1.5rem;
+    font-family: 'NanumSquare', sans-serif;
+    letter-spacing: 1px;
+    color:#4c4c4c;
+    text-align: center;
+}
+.hireWrap h4>span{
+    color:#2677e0;
+    font-weight: bold;
+}
+/*모집직종*/
+.jobWrap h4{
+    padding:70px 0 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.jobWrap>div{
+    border:2px solid #e0e0e0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.jobWrap>div .notice{
+    background:#e0e0e0;
+    display: block;
+    padding:10px 15px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}

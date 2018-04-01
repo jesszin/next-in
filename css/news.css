@@ -80,9 +80,6 @@ header nav ul li:nth-child(4) a::after{
     margin:30px auto 50px;
 }
 
-/*common*/
-
-
 /*layout*/
 #ir-page .irWrap .ir-graph .news{
     max-width: 80%;
@@ -92,7 +89,6 @@ header nav ul li:nth-child(4) a::after{
     display: flex;
     font-weight: normal;
     border-bottom:1px solid #ddd;
-    padding:20px 0;
     vertical-align: middle;
     line-height: 1rem;
 }
@@ -120,41 +116,75 @@ header nav ul li:nth-child(4) a::after{
     font-size: 0.9rem;
     margin-bottom:40px;
 }
-.ir-graph .news ul li>p{
-    display: block;;
-    color:#ccc;
-    padding:0 20px;
-    font-size: 1em;
-    letter-spacing: 1px;
-}
-.ir-graph .news ul li>span{
-    display:block;
-    line-height: 1rem;
-    font-size: 0.9rem;
-    width:90px;
-    margin-right:20px;
-    text-align: center;
-    background:#4c1b1b;
-    color:#fff;
-}
-.ir-graph .news ul li>a{
+
+/*news-list*/
+.news-list{
     display: block;
-    color:#4c4c4c;
-    letter-spacing: 1.2px;
-    margin-right:10px;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
 }
-.ir-graph .news ul li>a:hover{
-    color:#0052bc;
-}
-.ir-graph .news ul li a img{
+.news-list .title>p{
+    font-size:1rem;
+    font-family: 'Alegreya Sans SC', sans-serif;
     vertical-align: middle;
 }
-.ir-graph .news>a{
+.news-list .title .more{
+    cursor: pointer;
+}
+.news-list>li{
+    border-bottom:1px solid #e2e2e6;
+    display: block;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.news-list>li>a{
+    position: relative;
+    display: block;
+    width:100%;
+    padding:20px 0;
+    text-indent:30px;
+    color:#000;
+    font-size:0.9rem;
+    letter-spacing: 1px;
+}
+.news-list>li>a:hover{
+    color:#2677e0;
+    background:rgba(237,238,239,0.8);
+    -webkit-transition:  all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition:  all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.news-list li a>span{
+    display: block;
+    font-size: 0.8rem;
+    color:#94989f;
+    margin-bottom:10px;
+}
+.news-list li:first-child{
+    display: flex;
+    justify-content: space-between;
+    border:none!important;
+}
+.news-list .underline{
+    display: block;
+    width: 100%;
+    height: 1px;
+    background:#e2e2e6;
+    position: relative;
+    margin-top:10px;
+}
+.news-list .underline::before{
+    content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    width:120px;
+    height: 100%;
+    background:#2677e0;
+}
+#btn{
     display: block;
     width: 25%;
     padding:20px;
@@ -166,8 +196,10 @@ header nav ul li:nth-child(4) a::after{
     color:#0052bc;
     letter-spacing: 1px;
     text-align: center;
+    background:#fff;
+    cursor: pointer;
 }
-.ir-graph .news>a:hover{
+#btn:hover{
     -webkit-transition:all 0.2s ease-in-out;
     -moz-transition:all 0.2s ease-in-out;
     -ms-transition:all 0.2s ease-in-out;
@@ -175,6 +207,13 @@ header nav ul li:nth-child(4) a::after{
     transition: all 0.2s ease-in-out;
     background:#0052bc;
     color:#fff;
+}
+.press2 li:nth-child(2),
+.press3 li:nth-child(2){
+    border-top:1px solid #ddd;
+}
+.press2,.press3{
+    display: none;
 }
 /*footer*/
 footer{

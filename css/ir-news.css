@@ -154,7 +154,7 @@ header nav ul li:nth-child(4) a::after{
 .ir-graph .news ul li a img{
     vertical-align: middle;
 }
-.ir-graph .news>a{
+#btn{
     display: block;
     width: 25%;
     padding:20px;
@@ -166,8 +166,10 @@ header nav ul li:nth-child(4) a::after{
     color:#0052bc;
     letter-spacing: 1px;
     text-align: center;
+    background:#fff;
+    cursor: pointer;
 }
-.ir-graph .news>a:hover{
+#btn:hover{
     -webkit-transition:all 0.2s ease-in-out;
     -moz-transition:all 0.2s ease-in-out;
     -ms-transition:all 0.2s ease-in-out;
@@ -175,6 +177,9 @@ header nav ul li:nth-child(4) a::after{
     transition: all 0.2s ease-in-out;
     background:#0052bc;
     color:#fff;
+}
+.account2{
+    display: none;
 }
 /*footer*/
 footer{

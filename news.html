@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html;"/>
@@ -53,27 +53,73 @@
             <h3>NEWS</h3>
             <h4>보도 자료</h4>
             <div class="news">
-                <ul>
+                <ul class="news-list press1">
+                    <li class="title">
+                        <p>NEWS RELEASE</p>
+                        <span class="clearfix"></span>
+                        <p class="more"><a href="news.html">list</a></p>
+                    </li>
+                    <span class="underline"></span>
                     <li>
-                        <p>2018년3월31일</p>
-                        <span>공시</span>
-                        <a href="#">2017년 결산 자료</a>
-                        <img src="img/pdf.gif" alt="pdf">
+                        <a href="news.html">
+                            <span class="data">2018.03.15</span>
+                            <p>넥스트인, 에너지 절감/보안에 사물인터넷 적용 선보여 업계 뜨거운 반응!</p>
+                        </a>
                     </li>
                     <li>
-                        <p>2018년3월15일</p>
-                        <span>정보</span>
-                        <a href="#">2018년 2월 월간 정보 발표</a>
-                        <img src="img/pdf.gif" alt="pdf">
+                        <a href="news.html">
+                            <span class="data">2018.03.02</span>
+                            <p>그리드 컴퓨팅 비즈니스화의 발빠른 행보로 주목받는 넥스트인</p>
+                        </a>
                     </li>
                     <li>
-                        <p>2018년2월10일</p>
-                        <span>보고서</span>
-                        <a href="#">제 46기 1분기 보고서</a>
-                        <img src="img/pdf.gif" alt="pdf">
+                        <a href="news.html">
+                            <span class="data">2018.02.19</span>
+                            <p>넥스트인, 국가 주요기관 솔라윈즈 NMS 프로그램 구축 진행</p>
+                        </a>
                     </li>
                 </ul>
-                <a href="#">IR NEWS 더 보기</a>
+                <ul class="news-list press2">
+                    <li>
+                        <a href="news.html">
+                            <span class="data">2018.03.15</span>
+                            <p>넥스트인, 에너지 절감/보안에 사물인터넷 적용 선보여 업계 뜨거운 반응!</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="news.html">
+                            <span class="data">2018.03.02</span>
+                            <p>그리드 컴퓨팅 비즈니스화의 발빠른 행보로 주목받는 넥스트인</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="news.html">
+                            <span class="data">2018.02.19</span>
+                            <p>넥스트인, 국가 주요기관 솔라윈즈 NMS 프로그램 구축 진행</p>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="news-list press3">
+                    <li>
+                        <a href="news.html">
+                            <span class="data">2018.03.15</span>
+                            <p>넥스트인, 에너지 절감/보안에 사물인터넷 적용 선보여 업계 뜨거운 반응!</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="news.html">
+                            <span class="data">2018.03.02</span>
+                            <p>그리드 컴퓨팅 비즈니스화의 발빠른 행보로 주목받는 넥스트인</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="news.html">
+                            <span class="data">2018.02.19</span>
+                            <p>넥스트인, 국가 주요기관 솔라윈즈 NMS 프로그램 구축 진행</p>
+                        </a>
+                    </li>
+                </ul>
+                <button id="btn">NEWS 더 보기</button>
             </div>
 
         </div>
@@ -81,5 +127,18 @@
     </div>
     <!--irwrap-->
 </div>
+<footer>
+    <img src="img/logo-white.png" alt="footer white logo">
+    <p>서울특별시 강서구 강서로 501-8 (가양동 192-2)</p>
+    <p>COPYRIGHT &copy;  2018 Next In. ALL RIGHTS RESERVED.</p>
+</footer>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script>
+    var n=1
+    $('#btn').click(function(){
+        n++
+        $('.press'+n).fadeIn()
+    });
+</script>
 </body>
 </html>

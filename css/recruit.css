@@ -195,8 +195,7 @@ header nav ul li:last-child a::after{
 }
 /*복리후생*/
 .welfare{
-    background:#f99;
-    height: 50vh;
+    height: 100%;
 }
 .welfare h4{
     padding-top:70px;
@@ -206,7 +205,7 @@ header nav ul li:last-child a::after{
 }
 .welfare>p{
     font-size: 0.9rem;
-    line-height: 25px;
+    line-height: 35px;
 }
 .welfare .firstline{
     width: 100%;
@@ -218,28 +217,84 @@ header nav ul li:last-child a::after{
     box-sizing: border-box;
     margin-top:30px;
 }
-.welfare .firstline li{
+.welfare .secondline{
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-left:1px solid #e0e0e0;
+    border-right:1px solid #e0e0e0;
+}
+.welfare .firstline li,
+.welfare .secondline li{
     width:33.333%;
     border-right:1px solid #e0e0e0;
-    padding:30px 0 10px;
+    padding:30px 15px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     text-align: center;
+
 }
-.welfare .firstline li:last{
+.welfare .secondline li{
+    border-bottom:1px solid #e0e0e0;
+}
+.welfare .firstline li:last-child,
+.welfare .secondline li:nth-child(3),
+.welfare .secondline li:last-child{
     border-right: none;
 }
-.welfare .firstline li>img{
+.welfare .firstline li>img,
+.welfare .secondline li>img{
     vertical-align: middle;
 }
-.welfare .firstline li>span{
+.welfare .firstline li>span,
+.welfare .secondline li>span{
     font-size: 1.1rem;
     font-weight: 600;
 }
-.welfare .firstline li>p{
+.welfare .firstline li>p,
+.welfare .secondline li>p{
     margin-top:15px;
     font-size: 0.9rem;
     font-family: 'NanumSquare', sans-serif;
     letter-spacing: 1px;
+    line-height: 23px;
+}
+/*더 보기 / 닫기*/
+.common-btn{
+    width: 100%;
+    background:#f3f3f3;
+    border:1px solid #e0e0e0;
+    text-align: center;
+    display:block;
+    padding:20px 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.addshow{
+    display: none;
+}
+/*footer*/
+footer{
+    width: 100%;
+    margin-top:150px;
+    padding:3% 0;
+    background:url(../img/footer-img.jpg) no-repeat;
+    background-position: 100% 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+footer p{
+    font-family: 'NanumSquare', sans-serif;
+    color:#dcdcdc;
+    line-height: 25px;
 }

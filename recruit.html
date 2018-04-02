@@ -115,36 +115,96 @@
         <p>직원들의 의견이 반영된 복리후생제도입니다.</p>
         <ul class="firstline">
             <li>
-                <img src="img/wf01.png" alt="welfare">
+                <img src="img/wf01.png" alt="업무지원">
                 <span>업무 관련 구입 지원</span>
                 <p>
                     기술과 디자인에 접할 기회를 지원하는 제도
                 </p>
             </li>
             <li>
-                <img src="img/wf02.png" alt="welfare">
-                <span>업무 관련 구입 지원</span>
+                <img src="img/wf02.png" alt="장기휴가">
+                <span>장기 휴가 제도</span>
                 <p>
-                    기술과 디자인에 접할 기회를 지원하는 제도
+                    1년에 3회, 장기 휴가를 지원합니다.
                 </p>
             </li>
             <li>
-                <img src="img/wf03.png" alt="welfare">
-                <span>업무 관련 구입 지원</span>
+                <img src="img/wf03.png" alt="">
+                <span>양호실 운영</span>
                 <p>
-                    기술과 디자인에 접할 기회를 지원하는 제도
+                    건강을 위해 준비되어 부담없이 이용가능합니다.
                 </p>
             </li>
         </ul>
-        <ul class="secondline">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+        <ul class="secondline" style="display: none;">
+            <li>
+                <img src="img/wf04.png" alt="글로벌제도">
+                <span>Go! 글로벌 제도</span>
+                <p>
+                    직원의 지식을 넓히기 위한 해외여행 비용을 지원
+                </p>
+            </li>
+            <li>
+                <img src="img/wf05.png" alt="welfare">
+                <span>출산/육아 제도</span>
+                <p>
+                    출산 전후 및 육아를 위한 재택근무 도입
+                </p>
+            </li>
+            <li>
+                <img src="img/wf06.png" alt="welfare">
+                <span>세미나/스터디 지원</span>
+                <p>
+                    최신 정보와 기술을 배울 수 있는 세미나 및 스터디 수강 비용 지원
+                </p>
+            </li>
+            <li>
+                <img src="img/wf07.png" alt="welfare">
+                <span>부담없는 회식</span>
+                <p>
+                    점심시간을 활용한 회식
+                </p>
+            </li>
+            <li>
+                <img src="img/wf08.png" alt="welfare">
+                <span>표창 제도</span>
+                <p>
+                    반기마다 가장 활약한 직원 및 성장한 직원에게 상장과 상금을 수여
+                </p>
+            </li>
+            <li>
+                <img src="img/wf09.png" alt="welfare">
+                <span>직원 생일</span>
+                <p>
+                    생일을 맞이한 직원에게 소정의 선물 및 조기퇴근
+                </p>
+            </li>
         </ul>
+        <button class="common-btn show">
+            더보기 &plus;
+        </button>
+        <button class="common-btn addshow">
+            접기 &minus;
+        </button>
     </div>
 </div>
+<footer>
+    <img src="img/logo-white.png" alt="footer white logo">
+    <p>서울특별시 강서구 강서로 501-8 (가양동 192-2)</p>
+    <p>COPYRIGHT &copy;  2018 Next In. ALL RIGHTS RESERVED.</p>
+</footer>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script>
+    $('.show').click(function(){
+        $(this).hide();
+        $('.addshow').fadeIn();
+        $('.secondline').slideDown();
+    });
+    $('.addshow').click(function(){
+        $(this).hide();
+        $('.show').fadeIn(100);
+        $('.secondline').slideUp();
+    });
+</script>
 </body>
 </html>

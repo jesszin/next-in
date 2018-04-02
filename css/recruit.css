@@ -195,7 +195,8 @@ header nav ul li:last-child a::after{
 }
 /*복리후생*/
 .welfare{
-    background:#f9f;
+    background:#f99;
+    height: 50vh;
 }
 .welfare h4{
     padding-top:70px;
@@ -206,4 +207,39 @@ header nav ul li:last-child a::after{
 .welfare>p{
     font-size: 0.9rem;
     line-height: 25px;
+}
+.welfare .firstline{
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    border:1px solid #e0e0e0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top:30px;
+}
+.welfare .firstline li{
+    width:33.333%;
+    border-right:1px solid #e0e0e0;
+    padding:30px 0 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+}
+.welfare .firstline li:last{
+    border-right: none;
+}
+.welfare .firstline li>img{
+    vertical-align: middle;
+}
+.welfare .firstline li>span{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.welfare .firstline li>p{
+    margin-top:15px;
+    font-size: 0.9rem;
+    font-family: 'NanumSquare', sans-serif;
+    letter-spacing: 1px;
 }
